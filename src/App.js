@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import AppStats from './AppStats';
 import Map from './Map'
 import Table from './Table'
+import { sortData } from './util';
 import {
   MenuItem,
   FormControl,
@@ -36,8 +37,10 @@ function App() {
             }
           )
         })
+
+        const sortedData = sortData(data);
          setCountries(newCountriesData);
-         setTableData(data);
+         setTableData(sortedData);
          console.log('country data >>>>>>>>', data);
       })
     };
