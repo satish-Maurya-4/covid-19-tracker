@@ -1,0 +1,36 @@
+.app{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    &__left{
+        flex: 0.9;
+        // align-self: flex-start;
+    }
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__stats{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+     &__table{
+         height: 400px;
+         margin-top: 20px;
+         overflow-y: scroll;
+         color: #6a5d5d;
+            >tr{
+                display: flex;
+                justify-content: space-between;
+                >td{
+                    padding: 0.5rem;
+                }
+            }
+         >tr:nth-child(odd){
+             background-color: #f3f2f8;
+         }
+     }
+}
