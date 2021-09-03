@@ -3,6 +3,7 @@ import AppStats from './AppStats';
 import Map from './Map'
 import Table from './Table'
 import { sortData } from './util';
+import LineGraph from './LineGraph';
 import {
   MenuItem,
   FormControl,
@@ -92,6 +93,8 @@ function App() {
           <CardContent>
             <h3>Live Cases by Country</h3>
             <Table countriesTableData = { tableData } />
+            <h3>Worldwide new cases</h3>
+            <LineGraph />
           </CardContent>
         </Card>
     </div>
