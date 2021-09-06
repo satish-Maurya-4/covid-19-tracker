@@ -4,7 +4,10 @@
     padding: 20px;
     &__left{
         flex: 0.9;
-        // align-self: flex-start;
+        border: 1px solid #000;
+    }
+    &__right{
+        border: 1px solid #000;
     }
     &__header{
         display: flex;
@@ -32,5 +35,9 @@
          >tr:nth-child(odd){
              background-color: #f3f2f8;
          }
+
+        //  &--graph{
+        //     width: 450px;
+        //  }
      }
 }

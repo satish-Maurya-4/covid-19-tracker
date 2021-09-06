@@ -42,7 +42,6 @@ function App() {
         const sortedData = sortData(data);
          setCountries(newCountriesData);
          setTableData(sortedData);
-         console.log('country data >>>>>>>>', data);
       })
     };
 
@@ -61,8 +60,6 @@ function App() {
       setCountryInfo(data);
     })
   };
-  console.log('country>>>>>>>', country);
-  console.log('country info >>>>>>', countryInfo);
   return (
     <div className="app">
       <div className="app__left">
